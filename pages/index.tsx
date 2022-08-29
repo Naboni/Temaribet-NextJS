@@ -14,6 +14,8 @@ import Header from '@/components/Common/Header'
 import Work from '@/components/Home/Work'
 import Footer from '@/components/Common/Footer'
 
+
+
 const Home: NextPage = () => {
   const user = useSelector(selectUser)
   const dispatch = useDispatch()

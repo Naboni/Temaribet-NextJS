@@ -14,6 +14,7 @@ const signup = async (email: string, password: string, role: string) => {
 
 const signin = async (email: string, password: string) => {
   const response = await fetch(`${API_URL}api/v1/user/login`, {
+     mode: 'no-cors',
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
